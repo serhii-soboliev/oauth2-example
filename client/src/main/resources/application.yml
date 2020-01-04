@@ -1,0 +1,22 @@
+server:
+  port: 9000
+  context-path: /ui
+  session:
+    cookie:
+      name: UISESSION
+
+security:
+  basic:
+    enabled: false
+  oauth2:
+    client:
+      clientId: dataart
+      clientSecret: secret_for_datart
+      accessTokenUri: http://localhost:10000/auth/oauth/token
+      userAuthorizationUri: http://localhost:10000/auth/oauth/authorize
+    resource:
+      userInfoUri: http://localhost:10000/auth/rest/hello/principal
+
+spring:
+  thymeleaf:
+    cache: false
