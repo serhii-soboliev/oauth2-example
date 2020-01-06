@@ -4,8 +4,7 @@ server:
 logging:
   level:
     org:
-      springframework:
-        boot: DEBUG
+      springframework: TRACE
 
 
 security:
