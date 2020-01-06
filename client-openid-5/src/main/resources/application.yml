@@ -1,0 +1,12 @@
+server:
+  port: 11000
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 354905108335-toia3l8iu3thntv24i9a9lgdm9tv48e5.apps.googleusercontent.com
+            client-secret: dveqi55n5OdMkex9SMZo3Fa_
+            scope: profile
