@@ -9,4 +9,18 @@ spring:
           google:
             client-id: 354905108335-toia3l8iu3thntv24i9a9lgdm9tv48e5.apps.googleusercontent.com
             client-secret: dveqi55n5OdMkex9SMZo3Fa_
-            scope: profile
+            scope:
+              - openid
+              - profile
+              - email
+              - phone
+        provider:
+          google:
+            user-info-uri: https://www.googleapis.com/oauth2/v3/userinfo
+            userNameAttribute: name
+
+
+logging:
+  level:
+    org:
+      springframework: TRACE
